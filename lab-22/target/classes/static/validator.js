@@ -8,11 +8,11 @@ function validate(first, last, email, phone, password, cPassword){
 	var passwordBox = document.getElementById("txtPassword");
 	var cPasswordBox = document.getElementById("txtCPassword");
 		
-	var phoneNumRegex = RegExp("[0-9]{10,10}");
+	//var phoneNumRegex = RegExp("[0-9]{10,10}");
 	var phoneNumRegex2 = RegExp("[(][0-9]{3}[)][0-9]{3}[-][0-9]{4}");
 	
-	if ((!phoneNumRegex.test(emailBox.value) && !phoneNumRegex2.test(emailBox.value)) || (phoneNumBox.value.length != 10)){
-		makeErrorElt("This doesn't look like a phone number.  ", "phoneNumDiv");
+	if (!phoneNumRegex2.test(phoneNumBox.value)){
+		makeErrorElt("This doesn't look like a phone number, which should be written in this format: (xxx)xxx-xxxx.  ", "phoneNumDiv");
 	
 		complete = false;
 	}

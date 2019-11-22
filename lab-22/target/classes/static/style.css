@@ -1,0 +1,16 @@
+body{
+	background-color:#96fffd;
+	
+}
+h1{
+	font-family:Impact;
+}
+table{
+	background-color:#f6ff00;
+	box-shadow: 6px 4px 10px #666666;
+}
+img{
+	
+-webkit-filter: drop-shadow(15px 10px 10px #666666);
+      
+}
